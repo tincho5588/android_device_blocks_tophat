@@ -35,9 +35,9 @@ endif
 #----------------------------------------------------------------------
 ifeq ($(KERNEL_DEFCONFIG),)
     ifeq ($(TARGET_BUILD_VARIANT),user)
-      KERNEL_DEFCONFIG := msm8909-1gb-perf_defconfig
+      KERNEL_DEFCONFIG := msm8909w-perf_defconfig
     else
-      KERNEL_DEFCONFIG := msm8909-1gb_defconfig
+      KERNEL_DEFCONFIG := msm8909w_defconfig
     endif
 endif
 
