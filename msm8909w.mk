@@ -8,4 +8,10 @@ PRODUCT_DEVICE := msm8909w
 
 #PRODUCT_CHARACTERISTICS := nosdcard,watch
 
+# Feature definition files for msm8909w
+PRODUCT_COPY_FILES += \
+ frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:system/etc/permissions/android.hardware.sensor.stepcounter.xml \
+ frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:system/etc/permissions/android.hardware.sensor.stepdetector.xml
+
+
 #$(call inherit-product, device/google/clockwork/build/wearable-mdpi-512-dalvik-heap.mk)
