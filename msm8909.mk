@@ -91,8 +91,6 @@ PRODUCT_COPY_FILES += \
 # line has to be in sync with build/target/product/core_base.mk
 endif # TARGET_USES_QCA_NFC
 
-PRODUCT_BOOT_JARS += qcom.fmradio \
-
 PRODUCT_BOOT_JARS += tcmiface
 PRODUCT_BOOT_JARS += qcmediaplayer
 
