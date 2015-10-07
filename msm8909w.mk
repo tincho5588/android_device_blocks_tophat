@@ -1,5 +1,8 @@
 $(call inherit-product, device/qcom/msm8909w/msm8909.mk)
 
+# Use overlay present in d/q/msm8909w instead of d/q/msm8909
+DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8909w/overlay
+
 # Flag to be used when applicable for both LW and LAW
 TARGET_SUPPORTS_WEARABLES := true
 
