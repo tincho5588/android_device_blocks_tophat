@@ -138,3 +138,6 @@ TARGET_USES_SSC := true
 USE_SENSOR_MULTI_HAL := false
 
 FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
+
+#add suffix variable to uniquely identify the board
+TARGET_BOARD_SUFFIX := w
