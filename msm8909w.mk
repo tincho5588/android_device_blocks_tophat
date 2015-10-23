@@ -160,4 +160,10 @@ PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
 
 #PRODUCT_CHARACTERISTICS := nosdcard,watch
 
+# Add the overlay path
+PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
+        $(QCPATH)/qrdplus/globalization/multi-language/res-overlay \
+        device/qcom/msm8909w/product/overlay \
+        $(PRODUCT_PACKAGE_OVERLAYS)
+
 #$(call inherit-product, device/google/clockwork/build/wearable-mdpi-512-dalvik-heap.mk)
