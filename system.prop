@@ -200,3 +200,7 @@ ro.qti.sensors.facing=false
 ro.qti.sensors.tilt=false
 ro.qti.sensors.tilt_detector=false
 ro.qti.sensors.tap=false
+
+#Enable sensors
+ro.qti.sensors.qheart=true
+ro.qti.sensors.wrist_tilt=true
