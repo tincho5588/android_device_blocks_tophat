@@ -140,6 +140,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/qcom/msm8909w/sensors/hals.conf:system/etc/sensors/hals.conf
 
+# Set hardware type to watch
+PRODUCT_COPY_FILES += \
+    device/qcom/msm8909w/wearable_core_hardware.xml:system/etc/permissions/wearable_core_hardware.xml
+
+PRODUCT_CHARACTERISTICS := nosdcard,watch
+
 PRODUCT_PACKAGES += \
     wpa_supplicant_overlay.conf \
     p2p_supplicant_overlay.conf
@@ -157,8 +163,6 @@ PRODUCT_LOCALES += th_TH vi_VN tl_PH hi_IN ar_EG ru_RU tr_TR pt_BR bn_IN mr_IN t
 PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
         $(QCPATH)/qrdplus/globalization/multi-language/res-overlay \
         $(PRODUCT_PACKAGE_OVERLAYS)
-
-#PRODUCT_CHARACTERISTICS := nosdcard,watch
 
 # Add the overlay path
 PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
