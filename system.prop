@@ -203,3 +203,9 @@ ro.qti.sensors.facing=false
 ro.qti.sensors.tilt=false
 ro.qti.sensors.tilt_detector=false
 ro.qti.sensors.tap=false
+
+#Enable WearQSTA
+ro.sensors.wearqstp=1
+
+#WearQSTA Wakelock by default disabled
+ro.sensors.wearqstp.lock=0
