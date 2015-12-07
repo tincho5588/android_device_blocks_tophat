@@ -79,7 +79,7 @@ PRODUCT_COPY_FILES += \
 endif # TARGET_USES_QCA_NFC
 
 PRODUCT_BOOT_JARS += tcmiface
-PRODUCT_BOOT_JARS += qcmediaplayer
+#PRODUCT_BOOT_JARS += qcmediaplayer
 
 ifneq ($(strip $(QCPATH)),)
 PRODUCT_BOOT_JARS += com.qti.dpmframework
