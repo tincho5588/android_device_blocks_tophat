@@ -150,3 +150,6 @@ FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 
 #add suffix variable to uniquely identify the board
 TARGET_BOARD_SUFFIX := w
+
+# Control flag between KM versions
+TARGET_HW_KEYMASTER_V03 := true
