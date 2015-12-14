@@ -155,4 +155,4 @@ FEATURE_QCRIL_UIM_SAP_SERVER_MODE := true
 TARGET_BOARD_SUFFIX := w
 
 # Control flag between KM versions
-TARGET_HW_KEYMASTER_V03 := true
+TARGET_HW_KEYMASTER_V03 := false
