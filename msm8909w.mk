@@ -108,6 +108,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += oem-services
 PRODUCT_PACKAGES += libsubsystem_control
 PRODUCT_PACKAGES += libSubSystemShutdown
+ifneq ($(strip $(QCPATH)),)
+PRODUCT_BOOT_JARS += com.qti.location.sdk
+endif
 
 PRODUCT_PACKAGES += wcnss_service
 
