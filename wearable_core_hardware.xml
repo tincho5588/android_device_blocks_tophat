@@ -28,4 +28,13 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 <permissions>
     <feature name="android.hardware.type.watch" />
+    <feature name="android.hardware.location" />
+    <feature name="android.hardware.sensor.compass" />
+    <feature name="android.hardware.sensor.accelerometer" />
+    <feature name="android.hardware.bluetooth" />
+    <feature name="android.hardware.touchscreen" />
+    <feature name="android.hardware.microphone" />
+
+    <!-- basic system services -->
+    <feature name="android.software.home_screen" />
 </permissions>
