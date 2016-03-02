@@ -172,5 +172,8 @@ PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
         $(QCPATH)/qrdplus/globalization/multi-language/res-overlay \
         device/qcom/msm8909w/product/overlay \
         $(PRODUCT_PACKAGE_OVERLAYS)
+#Enable DM_VERITY support
+PRODUCT_SUPPORTS_VERITY := true
+PRODUCT_SYSTEM_VERITY_PARTITION := /dev/block/bootdevice/by-name/system
 
 #$(call inherit-product, device/google/clockwork/build/wearable-mdpi-512-dalvik-heap.mk)
