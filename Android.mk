@@ -12,3 +12,6 @@
 #include $(BUILD_PREBUILT)
 
 #include $(call all-makefiles-under,$(LOCAL_PATH))
+
+LOCAL_PATH := $(call my-dir)
+include $(call first-makefiles-under,$(LOCAL_PATH))

@@ -191,11 +191,11 @@ endif
 #----------------------------------------------------------------------
 # extra images
 #----------------------------------------------------------------------
-include device/qcom/common/generate_extra_images.mk
+include $(BOARD_COMMON_DIR)/generate_extra_images.mk
 
 #----------------------------------------------------------------------
 # pick up additional files for Tiny Android builds
 #----------------------------------------------------------------------
 ifeq ($(BUILD_TINY_ANDROID), true)
-include device/qcom/common/rootdir/Android.mk
+include $(BOARD_COMMON_DIR)/rootdir/Android.mk
 endif

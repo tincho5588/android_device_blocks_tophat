@@ -1,5 +1,15 @@
 DEVICE_PACKAGE_OVERLAYS := device/qcom/msm8909w/overlay
 
+BOARD_COMMON_DIR := device/qcom/msm8909w/common
+BOARD_SEPOLICY_8909W_DIR := device/qcom/msm8909w/sepolicy
+BOARD_OPENSOURCE_DIR := device/qcom/msm8909w/opensource
+BOARD_DLKM_DIR := device/qcom/msm8909w/common/dlkm
+
+BOARD_GPS_HAL := hardware/qcom/gps/msm8909
+BOARD_DISPLAY_HAL := hardware/qcom/display/msm8909
+BOARD_BT_HAL := hardware/qcom/bt/msm8909
+BOARD_WLAN_HAL := hardware/qcom/wlan/msm8909
+
 TARGET_USES_QCOM_BSP := true
 ifeq ($(TARGET_PRODUCT),msm8909w)
 TARGET_USES_QCA_NFC := true
@@ -21,7 +31,7 @@ PRODUCT_COPY_FILES += device/qcom/msm8909w/media/media_profiles_8909.xml:system/
                       device/qcom/msm8909w/media/media_codecs_8909.xml:system/etc/media_codecs.xml
 endif
 
-$(call inherit-product, device/qcom/common/common.mk)
+$(call inherit-product, $(BOARD_COMMON_DIR)/common.mk)
 
 PRODUCT_NAME := msm8909w
 PRODUCT_DEVICE := msm8909w
