@@ -209,3 +209,7 @@ ro.sensors.wearqstp=1
 
 #WearQSTA Wakelock by default disabled
 ro.sensors.wearqstp.lock=0
+
+#Enable sensors
+ro.qti.sensors.qheart=true
+ro.qti.sensors.wrist_tilt=true
