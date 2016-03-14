@@ -194,4 +194,7 @@ PRODUCT_PACKAGE_OVERLAYS := $(QCPATH)/qrdplus/Extension/res-overlay \
         device/qcom/msm8909w/product/overlay \
         $(PRODUCT_PACKAGE_OVERLAYS)
 
+TARGET_WEAR_OUT := $(subst $(ANDROID_BUILD_TOP)/,,$(ANDROID_PRODUCT_OUT))
+BOARD_KERNEL_HEADER_DEPENDENCIES := $(TARGET_WEAR_OUT)/obj/KERNEL_OBJ/usr
+BOARD_KERNEL_HEADER_DIR := $(BOARD_KERNEL_HEADER_DEPENDENCIES)/include
 #$(call inherit-product, device/google/clockwork/build/wearable-mdpi-512-dalvik-heap.mk)
