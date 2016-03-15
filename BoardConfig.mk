@@ -20,7 +20,7 @@
 ifeq ($(TARGET_ARCH),)
 TARGET_ARCH := arm
 endif
-
+QCPATH := vendor/qcom/proprietary
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_APPEND_DTB := true
 TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
