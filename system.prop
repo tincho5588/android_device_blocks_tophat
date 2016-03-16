@@ -216,3 +216,6 @@ ro.qti.sensors.wrist_tilt=true
 
 #reduce background apps limit to 16 on wearables
 ro.sys.fw.bg_apps_limit=16
+
+#Enable delay service restart
+ro.am.reschedule_service=true
