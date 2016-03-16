@@ -213,3 +213,6 @@ ro.sensors.wearqstp.lock=0
 #Enable sensors
 ro.qti.sensors.qheart=true
 ro.qti.sensors.wrist_tilt=true
+
+#reduce background apps limit to 16 on wearables
+ro.sys.fw.bg_apps_limit=16
