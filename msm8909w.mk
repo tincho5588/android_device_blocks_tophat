@@ -11,13 +11,11 @@ BOARD_BT_HAL := hardware/qcom/bt/msm8909
 BOARD_WLAN_HAL := hardware/qcom/wlan/msm8909
 
 TARGET_USES_QCOM_BSP := true
-ifeq ($(TARGET_PRODUCT),msm8909w)
-TARGET_USES_QCA_NFC := true
-endif
 ifeq ($(TARGET_USES_QCOM_BSP), true)
 # Add QC Video Enhancements flag
 TARGET_ENABLE_QC_AV_ENHANCEMENTS := true
 endif #TARGET_USES_QCOM_BSP
+TARGET_USES_NQ_NFC := false
 
 # Flag to be used when applicable for both LW and LAW
 TARGET_SUPPORTS_WEARABLES := true
@@ -47,46 +45,6 @@ endif
 
 #Android EGL implementation
 PRODUCT_PACKAGES += libGLES_android
-
-# NFC packages
-ifeq ($(TARGET_USES_QCA_NFC),true)
-NFC_D := true
-
-ifeq ($(NFC_D), true)
-    PRODUCT_PACKAGES += \
-        libnfcD-nci \
-        libnfcD_nci_jni \
-        nfc_nci.msm8916 \
-        NfcDNci \
-        Tag \
-        com.android.nfc_extras \
-        com.android.nfc.helper \
-        SmartcardService \
-        org.simalliance.openmobileapi \
-        org.simalliance.openmobileapi.xml \
-        libassd
-else
-    PRODUCT_PACKAGES += \
-    libnfc-nci \
-    libnfc_nci_jni \
-    nfc_nci.msm8916 \
-    NfcNci \
-    Tag \
-    com.android.nfc_extras
-endif
-
-# file that declares the MIFARE NFC constant
-# Commands to migrate prefs from com.android.nfc3 to com.android.nfc
-# NFC access control + feature files + configuration
-PRODUCT_COPY_FILES += \
-        packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
-        frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
-        frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
-        frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-        frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml
-# Enable NFC Forum testing by temporarily changing the PRODUCT_BOOT_JARS
-# line has to be in sync with build/target/product/core_base.mk
-endif # TARGET_USES_QCA_NFC
 
 PRODUCT_BOOT_JARS += tcmiface
 #PRODUCT_BOOT_JARS += qcmediaplayer
@@ -134,6 +92,33 @@ PRODUCT_BOOT_JARS += com.qti.location.sdk
 endif
 
 PRODUCT_PACKAGES += wcnss_service
+
+# NFC
+ifeq ($(strip $(TARGET_USES_NQ_NFC)),true)
+PRODUCT_PACKAGES += \
+    NQNfcNci \
+    libnqnfc-nci \
+    libnqnfc_nci_jni \
+    nfc_nci.nqx.default \
+    libp61-jcop-kit \
+    com.nxp.nfc.nq \
+    com.nxp.nfc.nq.xml \
+    libpn547_fw.so \
+    libpn548ad_fw.so \
+    libnfc-brcm.conf \
+    libnfc-nxp.conf \
+    nqnfcee_access.xml \
+    nqnfcse_access.xml \
+    Tag \
+    com.android.nfc_extras
+
+PRODUCT_COPY_FILES += \
+    packages/apps/Nfc/migrate_nfc.txt:system/etc/updatecmds/migrate_nfc.txt \
+    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml \
+    frameworks/native/data/etc/com.android.nfc_extras.xml:system/etc/permissions/com.android.nfc_extras.xml \
+    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml
+endif # TARGET_USES_NQ_NFC
 
 # Listen configuration file
 PRODUCT_COPY_FILES += \
