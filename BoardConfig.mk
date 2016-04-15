@@ -23,7 +23,7 @@ endif
 
 TARGET_COMPILE_WITH_MSM_KERNEL := true
 TARGET_KERNEL_APPEND_DTB := true
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := $(PWD)/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8/bin/arm-eabi-
+TARGET_KERNEL_CROSS_COMPILE_PREFIX := ${ANDROID_BUILD_TOP}/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin/arm-linux-androideabi-
 
 BOARD_USES_GENERIC_AUDIO := true
 USE_CAMERA_STUB := true
@@ -43,7 +43,7 @@ TARGET_NO_RPC := true
 GET_FRAMEBUFFER_FORMAT_FROM_HWC := false
 AUDIO_FEATURE_ENABLED_SPLIT_A2DP := true
 
-BOOTLOADER_GCC_VERSION := arm-eabi-4.8
+BOOTLOADER_GCC_VERSION := arm-linux-androideabi-4.9
 BOOTLOADER_PLATFORM := msm8909# use msm8952 LK configuration
 
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
