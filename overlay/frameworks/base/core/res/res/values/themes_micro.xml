@@ -36,5 +36,6 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <style name="Theme.Micro" parent="Theme.Holo.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowFullscreen">true</item>
+        <item name="windowActivityTransitions">true</item>
     </style>
 </resources>
