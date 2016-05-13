@@ -37,5 +37,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         <item name="windowNoTitle">true</item>
         <item name="windowFullscreen">true</item>
         <item name="windowActivityTransitions">true</item>
+        <item name="listPopupWindowStyle">@style/Widget.Material.ListPopupWindow</item>
+	<item name="textViewStyle">@style/Widget.Micro.TextView</item>
+    </style>
+    <style name="Widget.Micro.TextView">
+        <item name="fontFamily">sans-serif-condensed</item>
+        <item name="android:hyphenationFrequency">normal</item>
+        <item name="android:breakStrategy">balanced</item>
+    </style>
+    <style name="Widget.EditText">
+         <item name="android:breakStrategy">simple</item>
     </style>
 </resources>
