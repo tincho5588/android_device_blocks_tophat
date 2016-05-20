@@ -102,4 +102,13 @@
      still use the accelerometer to determine the orientation, such as when
      docked if the dock is configured to enable the accelerometer. -->
    <bool name="config_supportAutoRotation">false</bool>
+
+   <!-- Control the default UI mode type to use when there is no other type override
+         happening.  One of the following values (See Configuration.java):
+             1  UI_MODE_TYPE_NORMAL
+             4  UI_MODE_TYPE_TELEVISION
+             5  UI_MODE_TYPE_APPLIANCE
+             6  UI_MODE_TYPE_WATCH
+         Any other values will have surprising consequences. -->
+   <integer name="config_defaultUiModeType">6</integer>
 </resources>
