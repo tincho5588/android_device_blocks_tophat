@@ -640,6 +640,14 @@
         <path name="speaker-mic" />
     </path>
 
+    <path name="voice-speaker-hfp">
+        <path name="speaker" />
+    </path>
+
+    <path name="voice-speaker-mic-hfp">
+        <path name="speaker-mic" />
+    </path>
+
     <path name="voice-headphones">
         <path name="headphones" />
         <path name="sidetone-headphone" />
