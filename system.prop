@@ -191,11 +191,8 @@ ro.sys.fw.bservice_enable=true
 ro.sys.fw.bservice_limit=5
 ro.sys.fw.bservice_age=5000
 
-#set device emmc size
-ro.emmc_size=8GB
-
 #DPI change for 8909 wearables
-ro.sf.lcd_density=160
+ro.sf.lcd_density=240
 #Disable sensors
 ro.qti.sdk.sensors.gestures=false
 ro.qti.sensors.scrn_ortn=false
@@ -203,6 +200,7 @@ ro.qti.sensors.facing=false
 ro.qti.sensors.tilt=false
 ro.qti.sensors.tilt_detector=false
 ro.qti.sensors.tap=false
+ro.qti.sensors.qheart=false
 
 #Enable WearQSTA
 ro.sensors.wearqstp=1
@@ -211,7 +209,6 @@ ro.sensors.wearqstp=1
 ro.sensors.wearqstp.lock=0
 
 #Enable sensors
-ro.qti.sensors.qheart=true
 ro.qti.sensors.wrist_tilt=true
 
 #reduce background apps limit to 16 on wearables
