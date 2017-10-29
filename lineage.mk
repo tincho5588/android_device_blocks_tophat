@@ -12,10 +12,10 @@ PRODUCT_NAME := lineage_tophat
 PRODUCT_DEVICE := tophat
 PRODUCT_BRAND := BLOCKS
 PRODUCT_MANUFACTURER := BLOCKS
-PRODUCT_MODEL:= BLOCKS modular smartwatch
+PRODUCT_MODEL:= blocks-tophat
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_MODEL=BLOCKS modular smartwatch \
+    PRODUCT_MODEL=blocks-tophat \
     PRODUCT_NAME=tophat \
     PRODUCT_DEVICE=tophat \
     TARGET_DEVICE=tophat \
