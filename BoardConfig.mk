@@ -24,6 +24,7 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 # Platform
 TARGET_BOARD_PLATFORM := msm8909
 TARGET_SOC := msm8909
+TARGET_SUPPORTS_WEARABLES := true
 
 # Architecture
 TARGET_ARCH := arm
