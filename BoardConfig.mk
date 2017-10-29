@@ -82,6 +82,7 @@ BOARD_USES_CYANOGEN_HARDWARE := true
 TARGET_INIT_VENDOR_LIB := libinit_msm8909
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc.0/
 TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8909
+TARGET_RECOVERY_FSTAB := device/blocks/tophat/rootdir/etc/fstab.qcom
 
 # Ant Services
 BOARD_ANT_WIRELESS_DEVICE := "vfs-prerelease"
