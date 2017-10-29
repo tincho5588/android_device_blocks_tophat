@@ -70,6 +70,9 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QC_TIME_SERVICES := true
 TARGET_POWERHAL_VARIANT := qcom
 MALLOC_SVELTE := true
+BOARD_DISPLAY_HAL := hardware/qcom/display/msm8909
+BOARD_BT_HAL := hardware/qcom/bt/msm8909
+BOARD_WLAN_HAL := hardware/qcom/wlan/msm8909
 
 # CMHW
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
@@ -113,7 +116,7 @@ TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_USES_C2D_COMPOSITION := false
 TARGET_USES_ION := true
 USE_OPENGL_RENDERER := true
-BOARD_DISPLAY_HAL := hardware/qcom/display/msm8909
+
 # Flags
 BOARD_NO_SECURE_DISCARD := true
 
