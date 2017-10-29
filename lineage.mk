@@ -18,5 +18,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_MODEL=blocks-tophat \
     PRODUCT_NAME=tophat \
     PRODUCT_DEVICE=tophat \
-    TARGET_DEVICE=tophat \
-  
+    TARGET_DEVICE=tophat
