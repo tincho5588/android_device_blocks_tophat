@@ -70,9 +70,9 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_USES_QC_TIME_SERVICES := true
 TARGET_POWERHAL_VARIANT := qcom
 MALLOC_SVELTE := true
-BOARD_DISPLAY_HAL := hardware/qcom/display/msm8909
-BOARD_BT_HAL := hardware/qcom/bt/msm8909
-BOARD_WLAN_HAL := hardware/qcom/wlan/msm8909
+BOARD_DISPLAY_HAL := hardware/qcom/display-caf/msm8916
+BOARD_BT_HAL := hardware/qcom/bt-caf
+BOARD_WLAN_HAL := hardware/qcom/wlan-caf
 
 # CMHW
 BOARD_HARDWARE_CLASS += hardware/cyanogen/cmhw
