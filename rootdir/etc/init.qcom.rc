@@ -465,6 +465,7 @@ service time_daemon /system/bin/time_daemon
 
 service audiod /system/bin/audiod
    class late_start
+   disabled
    user system
    group system
 
