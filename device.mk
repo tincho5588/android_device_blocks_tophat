@@ -142,15 +142,6 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8909
 
-# Display Properties
-PRODUCT_PROPERTY_OVERRIDES += \
-    debug.composition.type=dyn \
-    debug.mdpcomp.idletime=600 \
-    persist.hwc.mdpcomp.enable=true \
-    persist.hwc.ptor.enable=true \
-    debug.enable.sglscale=1 \
-    ro.opengles.version=196608
-
 # Keystore
 ifneq ($(TARGET_PROVIDES_KEYMASTER),true)
 PRODUCT_PACKAGES += \
