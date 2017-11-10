@@ -1,0 +1,82 @@
+# Proprietary files for tophat
+
+# ADSP
+bin/adsprpcd
+vendor/lib/libadsprpc.so
+
+# Audio
+vendor/lib/libacdb-fts.so
+vendor/lib/libacdbloader.so
+vendor/lib/libacdbrtac.so
+vendor/lib/libadiertac.so
+vendor/lib/libaudcal.so
+vendor/lib/libqct_resampler.so
+
+# Bluetooth
+bin/btnvtool
+bin/hci_qcomm_init
+vendor/lib/libbtnv.so
+
+# Display Color Calibration
+vendor/lib/libmm-disp-apis.so
+vendor/lib/libmm-qdcm.so
+
+# DRM
+bin/qseecomd
+vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so
+vendor/lib/libQSEEComAPI.so
+vendor/lib/librpmb.so
+vendor/lib/libssd.so
+
+# Graphics
+vendor/lib/egl/eglsubAndroid.so
+vendor/lib/egl/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libc2d30-a3xx.so
+vendor/lib/libc2d30-a4xx.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-qcom.so
+vendor/lib/libOpenCL.so
+vendor/lib/librs_adreno.so
+vendor/lib/libsc-a2xx.so
+vendor/lib/libsc-a3xx.so
+vendor/lib/libscale.so
+
+# Media
+vendor/lib/libmmosal.so
+
+# Qualcomm framework
+bin/irsc_util
+vendor/lib/libdiag.so
+vendor/lib/libDiagService.so
+vendor/lib/libdsi_netctrl.so
+vendor/lib/libdsutils.so|47858b3770d5aff6da89180ea34bb37c810adc54
+vendor/lib/libidl.so
+vendor/lib/libqcci_legacy.so
+vendor/lib/libqdi.so
+vendor/lib/libqmi.so
+vendor/lib/libqmi_cci.so
+vendor/lib/libqmi_client_helper.so
+vendor/lib/libqmi_client_qmux.so
+vendor/lib/libqmi_common_so.so
+vendor/lib/libqmi_csi.so
+vendor/lib/libqmi_encdec.so
+vendor/lib/libqmiservices.so
+vendor/lib/libsmemlog.so
+
+# Thermal
+bin/thermal-engine
+vendor/lib/libthermalclient.so
+vendor/lib/libthermalioctl.so
+
+# Time services
+-app/TimeService/TimeService.apk
+bin/time_daemon
+vendor/lib/libtime_genoff.so
+vendor/lib/libTimeService.so
