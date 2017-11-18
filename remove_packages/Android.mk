@@ -18,7 +18,7 @@ LOCAL_OVERRIDES_PACKAGES := AlarmClock \
                             CMUpdater \
                             CMWallpapers \
                             Contacts \
-                            CyanogenSetupWizard \
+                            LineageSetupWizard \
                             DeskClock \
                             DownloadProviderUi \
                             Development \
