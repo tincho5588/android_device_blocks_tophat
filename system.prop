@@ -33,3 +33,6 @@ ro.opengles.version=196608
 
 # Stop ril from starting and hide it in settings
 ro.radio.noril=1
+
+# We remove the setupwizard so make the system think we used it
+DEVICE_PROVISIONED=1
