@@ -103,8 +103,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc \
     vold.fstab \
     init.target.rc \
-    fstab.qcom \
-    init.qti.synaptics_dsx_qhd.sh
+    fstab.qcom
 	
 # Media
 PRODUCT_COPY_FILES += \
