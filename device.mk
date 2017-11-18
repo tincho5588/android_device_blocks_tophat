@@ -223,5 +223,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/blocks/tophat/configs/sensors/hals.conf:system/etc/sensors/hals.conf
 
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 $(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 $(call inherit-product, frameworks/native/build/phone-hdpi-dalvik-heap.mk)
